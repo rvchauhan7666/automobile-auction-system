@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            overflow-x: hidden;
+            align-items: 7rem;
+            justify-content: center center;
+            background: url(ROHIT.jpeg) no-repeat center center/cover; 
+        background-position: 1rem 1rem 1rem 1rem;
+               }
+
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            position: relative; 
+           left: 28%;
+           color: #fff;
+        }
+
+        select, input {
+            width: 45%;
+           padding: 10px;
+            margin-bottom: 20px;
+           position: relative;
+           left: 28%;
+        }
+        input#price {
+    width: calc(44.7% - 20px);
+}
+        .submit{
+            position: relative;
+            bottom: 1rem;
+            left: 20.6rem;
+            width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #FF5722;
+    color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="price.php" method="post">
+        <label for="price">Car Price:</label>
+        <input type="text" name="price" id="price" placeholder="Enter car price">
+
+        <label for="dents">Number of Dents:</label>
+        <select name="dents" id="dents">
+            <option>Select Option</option>
+            <option>0-2</option>
+            <option>2-4</option>
+            <option>4-6</option>
+        </select>
+
+        <label for="scratches">Number of Scratches:</label>
+        <select name="scratches" id="scratches">
+            <option>Select Option</option>
+            <option>0-2</option>
+            <option>2-4</option>
+            <option>4-6</option>
+        </select>
+
+        <label for="year">Car Model Year:</label>
+        <select name="year" id="year">
+            <option>Select Option</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+            
+        </select>
+
+      <!--  <label for="kmsDriven">Kilometers Driven:</label>
+        <input type="text" name="kmsDriven" id="kmsDriven" placeholder="Enter kilometers driven"> -->
+<br>
+<br>
+<br>
+        <button type="submit" class="submit">Calculate</button>
+    </form>
+</div>
+</body>
+</html>

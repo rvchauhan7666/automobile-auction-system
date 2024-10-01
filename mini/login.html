@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           color: #fff;
+            margin: 0;
+            padding: 0;
+            background: url(ROHIT.jpeg) no-repeat center center/cover; 
+            background-size:cover;
+        
+        }
+
+        .container {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px; 
+            background-color: #FF5722; 
+            color:#fff;
+            border: 2px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #E64A19; /* Darker shade for hover */
+        }
+        a{
+            text-decoration: none;
+            color: #ccc;
+        }
+        a:hover{
+            background-color: rgb(132, 78, 232);
+
+        }
+       .submit{
+        width: 5rem;
+        height: 1.7rem;
+        position: relative;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="login.php" method="post">
+                <legend>LOGIN FORM</legend>
+                <hr>
+                <input type="email" name="mail" id="mail"placeholder="Email" required><br><br>
+                <input type="password" name="password" id="password"placeholder="password" required><br><br>
+                <input type="submit" value="LOGIN" id="register" class="submit">
+                
+                
+    </div>
+    
+</body>
+</html>
